@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    display: inline-block;
+}
+.all {
+    background-color: rgb(164, 211, 242);
+    height: 90vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5vh 2vw 1vh 1vw;
+}
+.navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.username button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-image: radial-gradient(white ,rgb(87, 145, 225));
+    border-radius: 40px;
+}
+.navi a {
+    text-decoration: none;
+    padding: 0 1.5vw;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: gray;
+    border-radius: 4px;
+}
+.navi a.active,a:hover {
+    background-color: rgb(87, 145, 225);
+    color: whitesmoke;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    cursor: pointer;
+   display: none;
+}
+#check{
+    display: none;
+}
+main{
+    display: flex;
+    padding: 2vh 5vw;
+   background-color: rgb(164, 211, 242);
+
+}
+.pic img {
+    width: 35vw;
+}
+.content span{
+    color: rgb(87, 145, 225);
+}
+.content h1{
+    font-size: 3rem;
+    padding-left: 5px;
+    line-height: 3.5rem;
+}
+.content p{
+    font-size: 2rem;
+    padding-top: 2vh;
+    line-height: 2.5rem;
+    
+}
+.content button {
+    text-align: center;
+    padding: 1.2rem;
+    background-color: rgb(87, 145, 225);
+    width: 40%;
+    border-radius: 35px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    
+}
+.content .book{
+    text-align: center;
+    margin-top: 2vh;
+}
+.content{
+    
+    padding: 1rem 7rem;
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 767px){
+    main {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo h1{
+        font-size: 1.2rem;
+    }
+   
+    .logo img {
+        width: 14vw;
+    }
+    .content{
+        padding: 0;
+    }
+    .content h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .content p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: 1.3rem;
+    }
+    .username button{
+        font-size: .7rem;
+        padding: 0.5rem;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+    }
+    .book button{
+        font-size: 1rem;
+        padding: .2rem ;
+    }
+    .pic img{
+        width: 13rem;
+        margin-top: 2rem;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        left: -100vw;
+        position: fixed;
+        top: 6vh;
+        height: 95vh;
+        width: 100vw;
+        background: rgb(42, 35, 35);
+        color: white;
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    ul li{
+        padding-bottom: 5vh;
+    }
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1200px){
+    .logo h1{
+        font-size: 1.5rem;
+        
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .pic{
+        display: flex;
+        align-items: center;
+    }
+    .content{
+        padding: 10px;
+    }
+}

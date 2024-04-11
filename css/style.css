@@ -109,6 +109,30 @@ main{
 .book:hover{
     transform: rotate(-10deg);
 }
+.pic img:hover{
+    animation: animate2 1.5s ease-in-out;
+}
+
+@keyframes animate2{
+    0%{
+        transform: translate(0,0) scale(75%,75%) ;
+    }
+    20%{
+        transform: translate(-1rem,-1rem) scale(75%,75%);
+    }
+    40%{
+        transform: translate(-1rem,1rem) scale(75%,75%);
+    }
+    60%{
+        transform: translate(1rem,1rem) scale(75%,75%);
+    }
+    80%{
+        transform: translate(1rem,-1rem) scale(75%,75%);
+    }
+    100%{
+        transform: translate(0,0 ) scale(100%,100%);
+    }
+}
 
 
 @media screen and (min-width: 250px) and (max-width: 767px){
